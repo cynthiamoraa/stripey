@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* styles/globals.css */
+:root {
+  --accentColor: #635bff;
+  --guideBackground: #5d69e3;
+  --guideDarkColor: #4d5ae0;
+  --guideLightColor: #6772e5;
+  --guideLighterColor: #7a84e9;
+  --guideLightestColor: #8d95ec;
+
+  --blendBackground: #80e9ff;
+  --blendIntersection: #0048e5;
+  --blendForeground: #7a73ff;
+
+  --gradientColorZero: #a960ee;
+  --gradientColorOne: #ff333d;
+  --gradientColorTwo: #90e0ff;
+  --gradientColorThree: #ffcb57;
+  --gradientColorZeroTransparent: rgba(169,96,238,0);
+  --gradientColorOneTransparent: rgba(255,51,61,0);
+  --gradientColorTwoTransparent: rgba(144,224,255,0);
+  --gradientColorThreeTransparent: rgba(255,203,87,0);
+
+  --backgroundColor: #f6f9fc;
+  --titleColor: #0a2540;
+  --textColor: #425466;
+  --linkColor: var(--accentColor);
+  --linkHoverColor: #0a2540;
+  --buttonColor: var(--accentColor);
+  --buttonHoverColor: #0a2540;
+}
+
+/* Base body style */
+body {
+  margin: 0;
+  font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
+  background: var(--backgroundColor);
+  color: var(--textColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  --gutterWidth: 16px;
+  --scrollbarWidth: 0px;
+  --windowWidth: calc(100vw - var(--scrollbarWidth));
+  --layoutWidth: calc(var(--windowWidth) - var(--gutterWidth) * 2);
+  --layoutWidthMax: 1080px;
+  --viewportWidthSmall: 375;
+  --viewportWidthMedium: 600;
+  --viewportWidthLarge: 1112;
+  --viewportScale: calc(var(--windowWidth) / var(--viewportWidthLarge));
+  --paddingTop: 160px;
+  --paddingBottom: 160px;
+  --columnPaddingNone: 0;
+  --columnPaddingSmall: 8px;
+  --columnPaddingNormal: 16px;
+  --columnPaddingMedium: 16px;
+  --columnPaddingLarge: 16px;
+  --columnPaddingXLarge: 16px;
+  --rowGapNormal: 8px;
+  --rowGapMedium: 24px;
+  --rowGapLarge: 32px;
+  --rowGapXLarge: 64px;
+  --rowGapXXLarge: 88px;
+  --rowGap: var(--rowGapNormal);
+  --columnCountMax: 1;
+  --columnWidth: calc(var(--layoutWidth) / var(--columnCountMax));
+  --columnMaxWidth: calc(var(--layoutWidthMax) * 0.25);
+  --copyMaxWidth: calc(var(--columnMaxWidth) * 3);
+}
+
+/* Ensure box-sizing is consistent */
+.MktRoot *, .MktRoot::after, .MktRoot::before {
+  box-sizing: border-box;
+}
+.clip-section-bottom {
+   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+}
+
+@media (min-width: 768px) {
+
+  .clip-section-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+}
+
+@media (min-width: 1024px) {
+
+  .clip-section-bottom {
+   clip-Path: polygon(0 0, 100% 0, 100% 85%,0  100%);
+}
+}
+
+
+/* Column container */
+.SiteContainer {
+  display: grid;
+  gap: 2rem; /* gutter between columns */
+  grid-template-columns: repeat(var(--columnCountMax, 1), 1fr);
+  padding-left: var(--columnPaddingMedium, 16px);
+  padding-right: var(--columnPaddingMedium, 16px);
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+}
+
+/* Debug column backgrounds */
+.SiteContainer > * {
+  background: rgba(173, 216, 230, 0.2); /* light blue tint */
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 1rem;
+}
