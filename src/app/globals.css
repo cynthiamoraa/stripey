@@ -98,11 +98,9 @@ html {
 /* Column container */
 .SiteContainer {
   display: grid;
-  gap: 2rem; /* gutter between columns */
+  gap: 0;
   grid-template-columns: repeat(var(--columnCountMax, 1), 1fr);
-  padding-left: var(--columnPaddingMedium, 16px);
-  padding-right: var(--columnPaddingMedium, 16px);
-  margin: 0 auto;
+   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   position: relative;
@@ -110,8 +108,72 @@ html {
 
 /* Debug column backgrounds */
 .SiteContainer > * {
-  background: rgba(173, 216, 230, 0.2); /* light blue tint */
-  border: 1px dashed rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  padding: 1rem;
+  /* background: rgba(173, 216, 230, 0.2); light blue tint */
+  
+  
+}
+.Section__background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: var(--sectionAngleMaxHeight, 700px);
+  top: 0;
+  left: 0;
+  background: var(--backgroundColor, #fafafa);
+  transform-origin: 100% 0;
+  transform: skewY(-6deg);
+  overflow: hidden;
+}
+
+/* Globe background */
+.BackgroundGlobe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Globe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Globe--isAngled {
+  transform: skewY(6deg);
+  transform-origin: 100% 0;
+}
+
+/* Guides */
+.Guides {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--columnPaddingNormal, 32px);
+  pointer-events: none;
+}
+
+.Guides__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: var(--layoutWidth, 1200px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.Guides__guide {
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    var(--guideDashedColor, rgba(0, 0, 0, 0.2)),
+    var(--guideDashedColor, rgba(0, 0, 0, 0.2)) 50%,
+    transparent 0,
+    transparent
+  );
+  background-size: 1px 8px;
 }

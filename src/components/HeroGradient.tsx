@@ -13,10 +13,12 @@ export default function HeroBackground({ children }: { children: ReactNode }) {
 
     let animationFrameId: number;
 
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
+  const resizeCanvas = () => {
+    const parent = canvas.parentElement;
+    if (!parent) return;
+    canvas.width = parent.clientWidth;
+    canvas.height = parent.clientHeight;
+  };
 
     const colors = [
       ["#a960ee", "#ff333d", "#90e0ff", "#ffcb57"],
@@ -78,11 +80,11 @@ export default function HeroBackground({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden  px-2 md:px-4 lg:px-23">
+    <div className="relative overflow-hidden px-2 md:px-4 lg:px-23 ">
       {/* Background */}
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 w-full h-full -z-10 clip-section-bottom"
+        className="absolute inset-0 w-full h-full clip-section-bottom  -z-10 "
       />
       {/* Foreground */}
       <div className="relative z-10">{children}</div>

@@ -2,7 +2,7 @@ import Guides from "./Guides";
 function HeroSection() {
   return (
     <section>
-      <div className="w-full grid lg:grid-cols-4 items-stretch h-full pt-13  ">
+      <div className="w-full grid lg:grid-cols-4 items-stretch h-full pt-13 pb-12 ">
         <Guides />
         <section className="col-span-4 md:col-span-2 flex flex-col gap-6 p-2  ">
           <header className="">
@@ -13,14 +13,14 @@ function HeroSection() {
             <h1
               className="font-serif font-bold md:font-black 
                text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-               text-black/90 leading-20 tracking-tight"
+               text-black/90  tracking-tight"
             >
               Stop Losing Billable Time <br className="hidden md:block" />
               You've Already Earned
             </h1>
           </header>
           <div>
-            <h1 className="text-black font-sans font-normal text-2xl">
+            <h1 className="text-[#42546] font font-normal text-2xl">
               Sque is the Legal Revenue & Operating System — it captures work
               automatically and runs billing as your system of record.
             </h1>
@@ -29,17 +29,17 @@ function HeroSection() {
               rejected e-bills
             </h1>
           </div>
-          <footer className="p-3 block md:flex justify-between gap-4">
-            <button className=" h-16  rounded-xl  px-4 py-3 bg-indigo-600 text-white font-[600] md:font-medium shadow hover:bg-indigo-700 transition">
+          <footer className=" block md:flex justify-between gap-2 pr-27">
+            <button className="   rounded-4xl  px-4 py-1 bg-[#0a2540] text-white font-[600] md:font-medium shadow hover:bg-indigo-700 transition">
               Calculate My Revenue Recovery
             </button>
-            <button className="px-4  py-3 h-16  mt-6 md:mt-0 bg-white rounded-xl hover:bg-gray-50  transition font font-medium border">
+            <button className="px-4  py-1 text-[#0a2540]  mt-6 md:mt-0 bg-white rounded-4xl hover:bg-gray-50  transition font font-medium ">
               Start Free Trial
             </button>
           </footer>
         </section>
         <div
-          className="hidden lg:block bg-cover col-span-5 md:col-span-2"
+          className="hidden md:block bg-cover col-span-4 md:col-span-2 "
           style={{ backgroundImage: "url('/images/sque.png')" }}
         ></div>
       </div>
