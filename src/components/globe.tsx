@@ -55,7 +55,7 @@ export default function Globe() {
       1,
       1000
     );
-    camera.position.z = 100;
+    camera.position.z = 60;
 
     const renderer = new THREE.WebGLRenderer({
       canvas,
@@ -72,7 +72,7 @@ export default function Globe() {
     scene.add(new THREE.HemisphereLight(0xffffbb, 0x080820, 1.5));
 
     // Base Sphere
-    const baseSphere = new THREE.SphereGeometry(19.5, 35, 35);
+    const baseSphere = new THREE.SphereGeometry(20, 40, 40);
     const baseMaterial = new THREE.MeshStandardMaterial({
       color: 0x0b2636,
       transparent: true,

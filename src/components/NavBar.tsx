@@ -8,7 +8,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full">
+    <header className="sticky top-0 z-40 w-full px-2 md:px-4 lg:px-23 ">
       <div className="relative max-w-screen-xl mx-auto px-6 flex items-center justify-between h-18  pt-6">
         <div className="flex items-center space-x-3 pr-8">
           {/* <img
@@ -28,26 +28,12 @@ function NavBar() {
         {/* Desktop menu */}
         <nav className="hidden lg:flex items-center justify-between w-full">
           {/* Left side links */}
-          <div
-            className="flex gap-8 items-center font-bold text-white hover:text-white"
-          >
+          <div className="flex gap-8 items-center font-bold text-white hover:text-white">
             <a href="#contact" className="">
-              Products
+              Features
             </a>
             <a href="#contact" className="">
-              Solutions
-            </a>
-            <a href="#contact" className="">
-              Developers
-            </a>
-            <a href="#contact" className="">
-              Startups
-            </a>
-            <a href="#contact" className="">
-              Enterprise
-            </a>
-            <a href="#contact" className="">
-              Pricing
+              Resources
             </a>
 
             {/* <a href="#features" className="text-white hover:text-white">

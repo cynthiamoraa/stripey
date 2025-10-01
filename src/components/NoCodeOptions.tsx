@@ -1,0 +1,75 @@
+export default function TrustEvidenceControl() {
+  return (
+    <section className="relative bg-white py-20">
+      {/* Header */}
+      <div className="max-w-5xl mx-auto px-6 text-center lg:text-left">
+        <h4 className="text-sm font-semibold text-purple-600 mb-2">
+          Trust, Evidence, and Control
+        </h4>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Transparent billing with security at the core
+        </h2>
+        <p className="text-lg text-gray-600 max-w-2xl">
+          Ensure compliance, accuracy, and accountability with audit-ready
+          billing solutions designed for enterprises.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="max-w-5xl mx-auto mt-12 px-6 grid gap-8 md:grid-cols-3">
+        {/* Card 1 */}
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
+            <span className="text-gray-400 text-sm">[Log Icon]</span>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Signed Activity Logs</h3>
+          <p className="text-gray-600 mb-4">
+            Cryptographically recorded and tamper-evident audit trails.
+            Timestamped entries with digital signatures for verifiable billing
+            proof.
+          </p>
+          <a href="#" className="text-purple-600 font-medium">
+            Learn more →
+          </a>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
+            <span className="text-gray-400 text-sm">[Check Icon]</span>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Billing Checks</h3>
+          <p className="text-gray-600 mb-4">
+            Automated validation against client billing rules. Prevent
+            rejections and write-downs with detailed compliance reports.
+          </p>
+          <a href="#" className="text-purple-600 font-medium">
+            Discover →
+          </a>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+          <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
+            <span className="text-gray-400 text-sm">[Shield Icon]</span>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Access Controls</h3>
+          <p className="text-gray-600 mb-4">
+            Enterprise security with SSO/SCIM integration and role-based
+            permissions. Audit-ready access management and data controls.
+          </p>
+          <a href="#" className="text-purple-600 font-medium">
+            Secure access →
+          </a>
+        </div>
+      </div>
+
+      {/* CTA Footer (button card) */}
+      <div className="max-w-5xl mx-auto mt-12 px-6 flex justify-center">
+        <button className="px-8 py-4 bg-purple-600 text-white font-medium rounded-xl shadow hover:bg-purple-700 transition">
+          Open Evidence Pack Sample
+        </button>
+      </div>
+    </section>
+  );
+}

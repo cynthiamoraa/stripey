@@ -95,7 +95,7 @@ html {
 }
 
 
-/* Column container */
+/* Column container
 .SiteContainer {
   display: grid;
   gap: 0;
@@ -104,14 +104,11 @@ html {
   max-width: 1440px;
   width: 100%;
   position: relative;
-}
+} */
 
 /* Debug column backgrounds */
-.SiteContainer > * {
-  /* background: rgba(173, 216, 230, 0.2); light blue tint */
-  
-  
-}
+
+
 .Section__background {
   position: relative;
   width: 100%;

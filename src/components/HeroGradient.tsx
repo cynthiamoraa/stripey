@@ -80,7 +80,7 @@ export default function HeroBackground({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="relative overflow-hidden px-2 md:px-4 lg:px-23 ">
+    <div className="relative overflow-hidden w-full ">
       {/* Background */}
       <canvas
         ref={canvasRef}
