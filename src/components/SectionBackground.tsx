@@ -148,12 +148,14 @@ export default function PracticeHeroSection() {
   const [activeTab, setActiveTab] = useState("Practice");
 
   return (
-    <div className="relative overflow-hidden bg-[#0a2540] text-white pl-4 lg:pl-22">
+    <div
+      className="relative  overflow-hidden bg-[#0a2540] text-white pl-4 lg:pl-22 clip-section-both"
+    >
       {/* Globe background */}
       <div className="absolute inset-y-0 right-0  h-full w-full lg:w-1/2 -z-0">
         <GlobeCanvas />
       </div>
-    
+
       {/* Content */}
       <div className="relative mx-auto max-w-6xl py-24 px-6 lg:px-12">
         <header className="text-center mb-12">

@@ -13,7 +13,7 @@ function EstimateRevenue() {
               </div>
             </header>
             <div>
-              <h1 className="text-[#425466] font-sans pt-12 text-2xl">
+              <h1 className="text-[#425466] font-serif pt-12 text-2xl">
                 Sque is the Legal Revenue & Compliance OS. Turn it off and
                 invoices stop, audit trails break, and revenue leaks return.
               </h1>

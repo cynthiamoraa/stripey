@@ -147,7 +147,7 @@ export default function MissionControl() {
 
           {/* CTA Footer */}
           <div className="mt-12">
-            <button className="px-8 py-4 bg-purple-600 text-white font-medium rounded-xl shadow hover:bg-purple-700 transition">
+            <button className="px-8 py-4 bg-purple-600 text-white font-bold rounded-xl shadow hover:bg-purple-700 transition">
               Open Evidence Pack Sample
             </button>
           </div>

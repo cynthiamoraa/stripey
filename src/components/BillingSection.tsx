@@ -66,7 +66,7 @@ export default function BillingSection() {
               key={i}
               whileHover={{
                 scale: 1.09,
-                backgroundColor: "rgb(243, 232, 255)", // light purple
+                backgroundColor: "rgb(237, 233, 254)", // light purple
               }}
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="relative bg-white border border-gray-200 rounded-2xl p-4 shadow-md hover:shadow-2xl flex flex-col justify-between min-h-[500px]"

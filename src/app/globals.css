@@ -75,22 +75,51 @@ html {
 .MktRoot *, .MktRoot::after, .MktRoot::before {
   box-sizing: border-box;
 }
-.clip-section-bottom {
-   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+
+.clip-section-top {
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+.clip-section-bottom {
+   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+}
+.clip-section-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+.clip-section-both {
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 @media (min-width: 768px) {
-
+  .clip-section-top {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
   .clip-section-bottom {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+.clip-section-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+.clip-section-both {
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
 }
 
-@media (min-width: 1024px) {
 
+
+@media (min-width: 1024px) {
+   .clip-section-top {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  }
   .clip-section-bottom {
    clip-Path: polygon(0 0, 100% 0, 100% 85%,0  100%);
+}
+.clip-section-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 10%);
+}
+.clip-section-both {
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 }
 
