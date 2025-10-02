@@ -1,11 +1,11 @@
-
+import StripeEdges from "./StripeEdges";
 
 function ReadyToStop() {
 
 
   return (
-    <section className="bg-[#f6f9fc]  py-18  px-4 lg:px-22 text-gray-500 clip-section-bottom ">
-      <div className="max-w-full mx-auto  mt-16 flex items-center justify-center text-center md:text-left ">
+    <section className=" relative bg-[#f6f9fc]  py-26  px-4 lg:px-22 text-gray-500 clip-section-bottom ">
+      <div className="max-w-6xl mx-auto  mt-16 flex items-center justify-center text-center md:text-left ">
         <div>
           <h4 className="font-semibold text-3xl text-gray-900 pb-4">
             Ready to Stop Revenue Leaks?

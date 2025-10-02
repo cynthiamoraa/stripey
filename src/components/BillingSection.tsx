@@ -46,21 +46,21 @@ const plans = [
 
 export default function BillingSection() {
   return (
-    <section className="bg-[#0a2540] py-24 px-4 lg:px-22">
-      <div className="max-w-full mx-auto">
+    <section className="bg-[#0a2540] py-30 px-4 lg:px-22 clip-section-bottom ">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <header className="text-center lg:text-left mb-16">
+        <header className="text-center px-6 lg:text-left mb-16">
           <h4 className="text-md font-semibold text-cyan-400 mb-8">
             Simple Plans
           </h4>
-    
+
           <h3 className="text-4xl font-bold text-white">
             Adopt the Operating System in Stages
           </h3>
         </header>
 
         {/* Plans */}
-        <div className="grid md:grid-cols-3 gap-8 p-4">
+        <div className="grid md:grid-cols-3 gap-8 px-6">
           {plans.map((plan, i) => (
             <motion.div
               key={i}
@@ -110,7 +110,7 @@ export default function BillingSection() {
         {/* Guarantee */}
         <footer className="mt-12 text-center text-gray-400 text-sm max-w-3xl mx-auto">
           Guarantee: 14-Day Activation + 30/60-Day ROI Money-Back. <br />
-          <span className="text-gray-500">
+          <span className="text-gray-400">
             (30 days for Starter/Pro; 60 days for Enterprise or teams with
             strict client billing rules.)
           </span>

@@ -34,7 +34,7 @@ const STEPS: Step[] = [
       "Instant Payouts for fast payments to users",
       "Payment Elements for customizable UIs",
     ],
-    time: 8, // seconds (adjust based on your actual video)
+    time: 40, // seconds (adjust based on your actual video)
   },
   {
     id: "invoice",
@@ -236,33 +236,47 @@ export default function ProductShowcaseWithVideo() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative bg-white py-24">
-      <div className="max-w-6xl mx-auto flex gap-12 px-6">
+    <section
+      ref={containerRef}
+      className="relative bg-[#f6f9fc] py-24 px-4 lg:px-22"
+    >
+      <div className="max-w-6xl mx-auto  px-6 text-center lg:text-left mb-20 ">
+        <h4 className="text-sm font-semibold text-purple-600 mb-2">
+          How Sque Works
+        </h4>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Find Work → Approve → Invoice → Paid
+        </h2>
+        <p className="text-lg text-gray-600 max-w-2xl">
+          Sque is the Legal Revenue & Operating System — it captures work
+          automatically, gives you downloadable proof, and runs billing as your
+          system of record.
+        </p>
+      </div>
+      <div className="max-w-6xl mx-auto flex gap-4 px-6">
         {/* LEFT: text steps */}
-        <div className="w-full lg:w-1/2 space-y-32">
+        <div className="w-full lg:w-1/3 space-y-32   ">
           {STEPS.map((s, i) => (
             <div
               key={s.id}
               ref={(el) => {
                 sectionRefs.current[i] = el;
               }}
-              className={`py-6 ${
+              className={`py-6 h-[520px] ${
                 activeIndex === i ? "opacity-100" : "opacity-80"
               }`}
             >
               <h2 className="text-3xl font-bold text-gray-900">{s.title}</h2>
               <p className="text-lg text-gray-600 mt-4">{s.copy}</p>
-
-             
             </div>
           ))}
         </div>
 
         {/* RIGHT: sticky video */}
-        <div className="hidden lg:block w-1/2 sticky top-24 h-[520px]">
-          <div className="relative w-full h-full bg-black rounded-lg overflow-hidden">
+        <div className="hidden lg:block w-2/3 sticky top-24 h-[520px]">
+          <div className="relative w-full h-full rounded-lg overflow-hidden">
             {/* Video element */}
-            <video
+            {/* <video
               ref={videoRef}
               className="absolute inset-0 w-full h-full object-cover"
               playsInline
@@ -272,11 +286,22 @@ export default function ProductShowcaseWithVideo() {
               // NOTE: sources — you must place these files into /public and adjust names
             >
               {/* Provide multiple source formats for better browser support */}
-              <source src="/demo/hero-steps.mp4" type="video/mp4" />
+            {/* <source src="/demo/hero-steps.mp4" type="video/mp4" />
               <source src="/demo/hero-steps.webm" type="video/webm" />
               {/* Fallback */}
-              Your browser does not support HTML5 video.
-            </video>
+            {/* Your browser does not support HTML5 video. */}
+            {/* </video>  */}
+            <video
+              ref={videoRef}
+              poster="/images/sque.png"
+              src="https://storage.googleapis.com/sque_storage/videos/Screen%20Recording%202025-08-26%20at%209.28.54%E2%80%AFAM.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover border-muted-foreground object-center bg-gray-50 opacity-90 rounded-lg"
+            />
 
             {/* Spinner when buffering */}
             {isBuffering && (

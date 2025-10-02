@@ -87,7 +87,7 @@ export default function HeroBackground({ children }: { children: ReactNode }) {
         className="absolute inset-0 w-full h-full clip-section-bottom  -z-10 "
       />
       {/* Foreground */}
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 ">{children}</div>
     </div>
   );
 }

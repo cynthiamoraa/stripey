@@ -1,24 +1,28 @@
-// Guides.jsx
-export default function Guides() {
-  const columns = 4;
-  const guides = columns + 1; // 5 guides for 4 columns
-
+export default function Guides({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="absolute inset-0 w-full h-full pointer-events-none  ">
-      <div className="relative h-full max-w-full  px-22">
-        {[...Array(guides)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute top-0 h-full w-px 
-                       bg-gradient-to-b from-gray-300/50 via-gray-300/50 to-transparent 
-                       bg-[length:1px_8px]"
-            style={{
-              left: `${(i / columns) * 100}%`, // 0%, 25%, 50%, 75%, 100%
-              transform: i === guides - 1 ? "translateX(-1px)" : "none", // pull last guide inside
-            }}
-          />
-        ))}
+    <div className="relative min-h-screen w-full">
+      {/* Grid Overlay */}
+      <div className="pointer-events-none max-w-6xl mx-auto absolute inset-0 z-50 ">
+        {/* Left solid border */}
+        <div className="absolute left-0  top-0 h-full border-l border-gray-200" />
+        {/* Right solid border */}
+        <div className="absolute right-0  top-0 h-full border-r border-gray-200" />
+        <div className="absolute inset-y-0 left-4 right-4 lg:left-22 lg:right-22  ">
+          {/* Empty divs just to place the grid lines */}
+          <div className="" />
+          <div className="border-l border-dashed border-gray-100" />
+          <div className="border-l border-dashed border-gray-100" />
+          <div className="border-l border-dashed border-gray-100" />
+          {/* The last column stays empty (so we only get 4 gridlines inside) */}
+        </div>
       </div>
+
+      {/* Page Content */}
+      <div className="relative z-10  ">{children}</div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function Footer() {
   return (
     <footer className="bg-[#fff] px-4 lg:px-22 text-gray-500 ">
       <div className="  py-16">
-        <div className="mx-auto max-w-7xl px-4 grid grid-cols-2 md:grid-cols-4 gap-12">
+        <div className="mx-auto max-w-6xl px-4 grid grid-cols-2 md:grid-cols-4 gap-12">
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center gap-2">
@@ -53,7 +53,7 @@ function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mx-auto max-w-7xl px-4 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mx-auto max-w-6xl px-4 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[#0a2540] text-sm">© 2025 Sque AI</p>
         </div>
       </div>

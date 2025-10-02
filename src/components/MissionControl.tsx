@@ -19,9 +19,9 @@ const data = [
 
 export default function MissionControl() {
   return (
-    <section className="relative bg-white py-20">
+    <section className="relative bg-[#f6f9fc] py-20 px-4 lg:px-22">
       {/* Top Header */}
-      <div className="max-w-5xl mx-auto px-6 text-center lg:text-left">
+      <div className="max-w-6xl mx-auto px-6 text-center lg:text-left">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           Mission Control
         </h4>
@@ -37,7 +37,7 @@ export default function MissionControl() {
       </div>
 
       {/* Highlight Box */}
-      <div className="max-w-5xl mx-auto mt-12 px-6">
+      <div className="max-w-6xl mx-auto mt-12 px-6">
         <div className="rounded-2xl shadow-xl shadow-purple-200 bg-gray-50 p-10 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">
             Your Legal Mission Control
@@ -75,12 +75,9 @@ export default function MissionControl() {
           {/* Cards */}
           <div className="grid md:grid-cols-3 gap-8 text-left">
             {/* Card 1 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
-              <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
-                <span className="text-gray-400 text-sm">📝</span>
-              </div>
+            <div className="bg-[white] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
               <h4 className="text-lg font-semibold mb-2">Smart To-Do List</h4>
-              <ul className="text-gray-600 text-sm space-y-1 flex-1">
+              <ul className="text-gray-600 text-sm space-y-3 flex-1">
                 <li>Review Johnson contract amendments</li>
                 <li>Prepare discovery documents</li>
                 <li>Follow up on settlement offer</li>
@@ -92,12 +89,9 @@ export default function MissionControl() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
-              <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
-                <span className="text-gray-400 text-sm">📅</span>
-              </div>
+            <div className="bg-[white] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
               <h4 className="text-lg font-semibold mb-2">Your Calendar</h4>
-              <ul className="text-gray-600 text-sm space-y-1 flex-1">
+              <ul className="text-gray-600 text-sm space-y-3 flex-1">
                 <li>Client meeting - Johnson Corp</li>
                 <li>Court hearing - Smith v. Jones</li>
                 <li>Team strategy session</li>
@@ -109,10 +103,7 @@ export default function MissionControl() {
             </div>
 
             {/* Card 3 (Chart) */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
-              <div className="h-32 bg-gray-50 flex items-center justify-center rounded-lg mb-6">
-                <span className="text-gray-400 text-sm">📊</span>
-              </div>
+            <div className="bg-[white] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col">
               <h4 className="text-lg font-semibold mb-2">
                 State of the Business
               </h4>

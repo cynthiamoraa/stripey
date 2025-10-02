@@ -1,9 +1,10 @@
 import Guides from "./Guides";
-import HoverArrow from "./style/HoverArrow";
 function HeroSection() {
   return (
-    <section>
-      <div className="w-full grid lg:grid-cols-4 items-stretch h-full pt-13 pb-12 pl-2 md:pl-4 lg:pl-23 ">
+    <section className="relative ">
+    
+
+      <div className=" grid lg:grid-cols-4 items-stretch h-full pt-13 pb-12 pl-2 md:pl-4 lg:pl-23 ">
         {/* <Guides /> */}
         <section className="col-span-4 md:col-span-2 flex flex-col gap-6 p-2  ">
           <header className="">

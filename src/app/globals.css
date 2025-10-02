@@ -22,7 +22,7 @@
   --gradientColorTwoTransparent: rgba(144,224,255,0);
   --gradientColorThreeTransparent: rgba(255,203,87,0);
 
-  --backgroundColor: #f6f9fc;
+  --backgroundColor: #fff;
   --titleColor: #0a2540;
   --textColor: #425466;
   --linkColor: var(--accentColor);
