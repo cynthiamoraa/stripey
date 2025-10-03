@@ -5,6 +5,7 @@ function ReadyToStop() {
 
   return (
     <section className=" relative bg-[#f6f9fc]  py-26  px-4 lg:px-22 text-gray-500 clip-section-bottom ">
+      <StripeEdges />
       <div className="max-w-6xl mx-auto  mt-16 flex items-center justify-center text-center md:text-left ">
         <div>
           <h4 className="font-semibold text-3xl text-gray-900 pb-4">

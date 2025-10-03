@@ -152,7 +152,7 @@ export default function PracticeHeroSection() {
       className="relative  overflow-hidden bg-[#0a2540] text-white pl-4 lg:pl-22 clip-section-both"
     >
       {/* Globe background */}
-      <div className="absolute inset-y-0 right-0  h-full w-full lg:w-1/2 -z-0">
+      <div className="absolute inset-y-0 right-[-30%] pt-8  h-full w-full  -z-0">
         <GlobeCanvas />
       </div>
 

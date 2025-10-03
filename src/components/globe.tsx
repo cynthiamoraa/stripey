@@ -159,7 +159,6 @@ export default function Globe() {
           Math.cos(Math.abs(lat) * (Math.PI / 180)) * dotSphereRadius;
         const circumference = radius * Math.PI * 2;
         const dotsForLat = circumference * dotDensity;
-
         for (let x = 0; x < dotsForLat; x++) {
           const lon = -180 + (x * 360) / dotsForLat;
           if (!visibilityForCoordinate(lon, lat)) continue;
@@ -204,7 +203,9 @@ export default function Globe() {
     // Animation
     const animate = () => {
       requestAnimationFrame(animate);
-      materials.forEach((m) => (m.uniforms.u_time.value += 0.03));
+      materials.forEach((m) => {
+        m.uniforms.u_time.value += 0.03;
+      });
       controls.update();
       renderer.render(scene, camera);
     };
@@ -212,6 +213,17 @@ export default function Globe() {
 
     return () => {
       window.removeEventListener("resize", resize);
+      controls.dispose();
+      scene.traverse((obj: any) => {
+        if (obj.geometry) obj.geometry.dispose();
+        if (obj.material) {
+          if (Array.isArray(obj.material)) {
+            obj.material.forEach((m: THREE.Material) => m.dispose());
+          } else {
+            (obj.material as THREE.Material).dispose();
+          }
+        }
+      });
       renderer.dispose();
     };
   }, []);
