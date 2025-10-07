@@ -11,8 +11,9 @@
     description:
       "Sque.ai helps you supercharge customer communication with AI.",
     icons: {
-      icon: "https://stripey-six.vercel.app/Sque_icon_universal.svg", // 👈 Path to your icon inside /public
+      icon: "/Sque_icon_universal.svg",
     },
+
     openGraph: {
       title: "Sque | AI-powered Conversations",
       description: "Modern customer engagement powered by AI.",
