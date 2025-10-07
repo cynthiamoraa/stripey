@@ -5,7 +5,7 @@
 
   export const metadata: Metadata = {
     metadataBase: new URL(
-      "https://stripey-six.vercel.app"|| "http://localhost:3000"
+      process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
     ),
     title: "Sque | AI-powered Conversations",
     description:
