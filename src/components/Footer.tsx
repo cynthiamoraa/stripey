@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "../public/Sque_icon_universal.svg";
-
+import Guides from "./Guides";
 function Footer() {
   const footerLinks = {
     Company: ["Feedback", "Media inquiries", "Contact us"],
@@ -14,8 +14,9 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#fff] px-4 lg:px-22 text-gray-500 ">
+    <footer className="bg-[#fff] relative px-4 lg:px-22 text-gray-500 ">
       <div className="  py-16">
+        <Guides />
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-2 md:grid-cols-4 gap-12">
           {/* Logo + About */}
           <div className="space-y-4 md:col-span-2">

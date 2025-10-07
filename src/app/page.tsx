@@ -21,7 +21,7 @@ export default function LandingPage() {
         <NavBar />
         <HeroSection />
       </HeroGradient>
-      <Guides>
+    
         <EstimateRevenue />
         <ConfidentialControl />
         <ProductShowcase />
@@ -33,7 +33,7 @@ export default function LandingPage() {
         <FAQSection />
         <ReadyToStop />
         <Footer />
-      </Guides>
+      
     </div>
   );
 }

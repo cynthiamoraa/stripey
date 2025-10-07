@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import GridLines from "./GrideLines";
+import Guides from "./Guides";
 
 export default function EnterpriseFeature() {
   const items = [
@@ -36,10 +36,10 @@ export default function EnterpriseFeature() {
   }, [items.length]);
 
   return (
-    <section className=" px-4 lg:px-22 bg-[#fff] py-20  clip-section-top">
-      <div className="relative max-w-6xl  mx-auto pt-18  overflow-hidden p-8 ">
+    <section className="z-50 relative px-4 lg:px-22 bg-[#fff] py-20  clip-section-top ">
+      <Guides />
+      <div className=" max-w-6xl  mx-auto pt-18  overflow-hidden p-8 ">
         {/* Card Content */}
-        <GridLines lines={5} color="border-amber-400" dashed />
         <h1 className="text-center lg:text-left text-black text-4xl  mb-8 font-bold">
           Works With Your Stack
         </h1>

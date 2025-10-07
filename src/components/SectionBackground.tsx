@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import GlobeCanvas from "./globe";
+import Guides from "./Guides";
 
 // Map statuses to colors
 const statusColors: Record<string, string> = {
@@ -148,16 +149,15 @@ export default function PracticeHeroSection() {
   const [activeTab, setActiveTab] = useState("Practice");
 
   return (
-    <div
-      className="relative  overflow-hidden bg-[#0a2540] text-white pl-4 lg:pl-22 clip-section-both"
-    >
+    <div className="relative  overflow-hidden bg-[#0a2540] text-white pl-4 lg:pl-22 clip-section-both">
+      <Guides  />
       {/* Globe background */}
       <div className="absolute inset-y-0 right-[-30%] pt-8  h-full w-full  -z-0">
         <GlobeCanvas />
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto max-w-6xl py-24 px-6 lg:px-12">
+      <div className="relative mx-auto max-w-6xl py-24 px-6 lg:px-12 -z-0">
         <header className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-extrabold">
             Built for Your Practice, Use Case, and Team

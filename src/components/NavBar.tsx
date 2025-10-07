@@ -8,7 +8,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full px-2 md:px-4 lg:px-23 ">
+    <header className="sticky top-0 z-40 max-w-6xl mx-auto px-2 md:px-4 lg:px-23 ">
       <div className="relative max-w-screen-xl mx-auto px-6 flex items-center justify-between h-18  pt-6">
         <div className="flex items-center space-x-3 pr-8">
           {/* <img

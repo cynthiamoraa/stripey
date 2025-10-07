@@ -8,14 +8,14 @@ interface GridLinesProps {
 }
 
 const GridLines: React.FC<GridLinesProps> = ({
-  lines = 5,
+  lines = 3,
   color = "border-amber-400",
   dashed = true,
   className = "",
 }) => {
   return (
     <div className={`absolute inset-0 pointer-events-none ${className}`}>
-      <div className="h-full w-full flex justify-between">
+      <div className="h-full max-w-full flex justify-between">
         {Array.from({ length: lines }).map((_, i) => (
           <div
             key={i}

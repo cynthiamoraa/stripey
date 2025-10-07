@@ -12,11 +12,10 @@ import "./globals.css";
 //   subsets: ["latin"],
 // });
 
-export const metadataBase = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
-);
-
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
   title: "Sque | AI-powered Conversations",
   description: "Sque.ai helps you supercharge customer communication with AI.",
   openGraph: {
@@ -26,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Sque",
   },
 };
+
 
 export default function RootLayout({
   children,

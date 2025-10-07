@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Guides from "./Guides";
 
 const plans = [
   {
@@ -46,7 +47,8 @@ const plans = [
 
 export default function BillingSection() {
   return (
-    <section className="bg-[#0a2540] py-30 px-4 lg:px-22 clip-section-bottom ">
+    <section className="bg-[#0a2540] relative py-30 px-4 lg:px-22 clip-section-bottom ">
+     <Guides />
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <header className="text-center px-6 lg:text-left mb-16">

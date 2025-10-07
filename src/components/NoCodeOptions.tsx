@@ -1,8 +1,11 @@
+import Guides from "./Guides";
+
 export default function TrustEvidenceControl() {
   return (
     <section className="relative bg-[#f6f9fc] py-20 px-4 lg:px-22">
       {/* Header */}
-      <div className="max-w-6xl mx-auto px-6 text-center lg:text-left">
+      <Guides />
+      <div className="max-w-6xl relative mx-auto px-6 text-center lg:text-left">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           Trust, Evidence, and Control
         </h4>
@@ -16,7 +19,7 @@ export default function TrustEvidenceControl() {
       </div>
 
       {/* Cards */}
-      <div className="max-w-6xl mx-auto mt-12 px-6 grid gap-8 md:grid-cols-3">
+      <div className="max-w-6xl relative mx-auto mt-12 px-6 grid gap-8 md:grid-cols-3">
         {/* Card 1 */}
         <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <div className=" bg-gray-50 flex items-center justify-center rounded-lg mb-6">
@@ -65,7 +68,7 @@ export default function TrustEvidenceControl() {
       </div>
 
       {/* CTA Footer (button card) */}
-      <div className="max-w-6xl mx-auto mt-12 px-6 flex justify-center">
+      <div className="max-w-6xl relative mx-auto mt-12 px-6 flex justify-center">
         <button className="px-8 py-4 bg-purple-600 text-white font-medium rounded-xl shadow hover:bg-purple-700 transition">
           Open Evidence Pack Sample
         </button>

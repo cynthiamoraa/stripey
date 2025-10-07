@@ -1,4 +1,5 @@
 "use client";
+import Guides from "./Guides";
 
 import {
   LineChart,
@@ -22,6 +23,7 @@ export default function MissionControl() {
     <section className="relative bg-[#f6f9fc] py-20 px-4 lg:px-22">
       {/* Top Header */}
       <div className="max-w-6xl mx-auto px-6 text-center lg:text-left">
+        <Guides />
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           Mission Control
         </h4>

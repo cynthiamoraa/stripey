@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Guides from "./Guides";
 
 const STEPS = [
   {
@@ -54,9 +55,10 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section className="bg-[#f6f9fc] py-24 px-4 lg:px-22">
+    <section className="bg-[#f6f9fc] relative py-24 px-4 lg:px-22">
       {/* Top Heading */}
-      <div className="max-w-6xl mx-auto px-6 text-center lg:text-left mb-20">
+      <Guides />
+      <div className="max-w-6xl relative mx-auto px-6 text-center lg:text-left mb-20">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           How Sque Works
         </h4>
@@ -70,7 +72,7 @@ export default function ProductShowcase() {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto flex flex-col gap-16 px-6">
+      <div className="max-w-6xl relative mx-auto flex flex-col gap-16 px-6">
         {/* Video */}
         <div className="w-full rounded-xl overflow-hidden shadow-lg">
           <video

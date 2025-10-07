@@ -6,14 +6,11 @@ function HeroSection() {
       {/* CONTENT CONTAINER */}
       <div className="relative mx-auto max-w-6xl ">
         {/* 👆 push text away from the image with padding-right */}
-        <div className="grid lg:grid-cols-4 items-stretch h-full pt-13 pb-12 ">
+        <div className="grid lg:grid-cols-4 items-stretch h-full  pb-12 ">
           {/* TEXT SIDE */}
           <section className="col-span-4 md:col-span-2 flex flex-col gap-6 p-2">
             <header>
-              <span className="p-2 rounded-lg backdrop-blur supports-[backdrop-filter]:bg-black/10 text-white">
-                Sessions 2025 <span>.</span>
-                <a href=""> watch on demand</a>
-              </span>
+              
               <h1
                 className="font-serif font-bold md:font-black 
                 text-4xl sm:text-5xl md:text-6xl lg:text-[90px] 
@@ -33,7 +30,7 @@ function HeroSection() {
                 rejected e-bills
               </h1>
             </div>
-            <footer className="flex justify-between gap-2 pr-0 md:pr-27">
+            <footer className="flex justify-between gap-2 pr-0 lg:pr-27">
               <button className="rounded-4xl px-2 md:px-4 py-1 bg-[#0a2540] text-white font-[600] md:font-medium shadow hover:bg-indigo-700 transition">
                 Calculate My Revenue Recovery
               </button>
