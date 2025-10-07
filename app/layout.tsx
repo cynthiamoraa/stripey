@@ -30,6 +30,14 @@
   }>) {
     return (
       <html lang="en">
+        <head>
+          {/* 👇 Explicitly tell browsers to use your favicon */}
+          <link
+            rel="icon"
+            href="/Sque_icon_universal.svg"
+            type="image/svg+xml"
+          />
+        </head>
         <body className="body theme--Light flavor--Chroma accent--Blurple min-h-screen">
           <main className="">{children}</main>
         </body>
