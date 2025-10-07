@@ -4,7 +4,7 @@ import { get } from "@vercel/edge-config";
 export const config = {
   matcher: ["/:path*"],
 };
-
+export const runtime = "edge";
 export async function middleware(req: NextRequest) {
   // If the EDGE_CONFIG env var is not set, redirect to a page that notifies the user
 
