@@ -8,15 +8,15 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 max-w-6xl mx-auto px-2 md:px-4 lg:px-23 ">
-      <div className="relative max-w-screen-xl mx-auto px-6 flex items-center justify-between h-18  pt-6">
+    <header className="sticky top-0 z-40 max-w-6xl mx-auto px-2 md:px-4 lg:px-22 ">
+      <div className="relative max-w-screen-xl mx-auto  flex items-center justify-between h-18  pt-6">
         <div className="flex items-center space-x-3 pr-8">
-          {/* <img
+          <img
             src="/Sque_icon_universal.svg"
             alt="Sque Logo"
             width={44}
             height={38}
-          /> */}
+          />
           <Link
             href="#home"
             className="font-bold tracking-tight text-2xl text-white"
@@ -29,10 +29,10 @@ function NavBar() {
         <nav className="hidden lg:flex items-center justify-between w-full">
           {/* Left side links */}
           <div className="flex gap-8 items-center font-bold text-white hover:text-white">
-            <a href="#contact" className="">
+            <a href="#Features" className="">
               Features
             </a>
-            <a href="#contact" className="">
+            <a href="#Resources" className="">
               Resources
             </a>
 
@@ -140,41 +140,18 @@ function NavBar() {
           {/* Body */}
           <div className="flex flex-col px-4 ">
             <a
-              href="#contact"
+              href="#Features"
               className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
             >
-              Products
+              Features
             </a>
             <a
-              href="#contact"
+              href="#Resources"
               className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
             >
-              Solutions
+              Resources
             </a>
-            <a
-              href="#contact"
-              className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
-            >
-              Developers
-            </a>
-            <a
-              href="#contact"
-              className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
-            >
-              Startups
-            </a>
-            <a
-              href="#contact"
-              className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
-            >
-              Enterprise
-            </a>
-            <a
-              href="#contact"
-              className="py-6 md:py-8 font-bold border-b border-gray-200 border-dashed"
-            >
-              Pricing
-            </a>
+          
           </div>
 
           {/* Footer */}

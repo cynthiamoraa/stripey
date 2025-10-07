@@ -1,14 +1,13 @@
-import Guides from "./Guides";
 
 function HeroSection() {
   return (
-    <section className="relative">
+    <section className="relative pl-4 lg:pl-22">
       {/* CONTENT CONTAINER */}
-      <div className="relative mx-auto max-w-6xl ">
+      <div className="relative mx-auto max-w-6xl  ">
         {/* 👆 push text away from the image with padding-right */}
         <div className="grid lg:grid-cols-4 items-stretch h-full  pb-12 ">
           {/* TEXT SIDE */}
-          <section className="col-span-4 md:col-span-2 flex flex-col gap-6 p-2">
+          <section className="col-span-4 md:col-span-2 md:w-3/5 lg:w-full flex flex-col gap-6 p-2">
             <header>
               
               <h1

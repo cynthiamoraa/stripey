@@ -57,7 +57,7 @@ export default function ProductShowcase() {
   return (
     <section className="bg-[#f6f9fc] relative py-24 px-4 lg:px-22">
       {/* Top Heading */}
-      <Guides />
+      <Guides  />
       <div className="max-w-6xl relative mx-auto px-6 text-center lg:text-left mb-20">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           How Sque Works

@@ -4,7 +4,7 @@ export default function TrustEvidenceControl() {
   return (
     <section className="relative bg-[#f6f9fc] py-20 px-4 lg:px-22">
       {/* Header */}
-      <Guides />
+      <Guides  />
       <div className="max-w-6xl relative mx-auto px-6 text-center lg:text-left">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           Trust, Evidence, and Control

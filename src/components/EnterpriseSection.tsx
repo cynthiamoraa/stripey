@@ -37,8 +37,8 @@ export default function EnterpriseFeature() {
 
   return (
     <section className="z-50 relative px-4 lg:px-22 bg-[#fff] py-20  clip-section-top ">
-      <Guides />
-      <div className=" max-w-6xl  mx-auto pt-18  overflow-hidden p-8 ">
+      <Guides  />
+      <div className=" max-w-6xl  mx-auto pt-18  overflow-hidden relative p-8 ">
         {/* Card Content */}
         <h1 className="text-center lg:text-left text-black text-4xl  mb-8 font-bold">
           Works With Your Stack

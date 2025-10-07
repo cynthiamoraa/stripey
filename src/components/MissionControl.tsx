@@ -22,8 +22,8 @@ export default function MissionControl() {
   return (
     <section className="relative bg-[#f6f9fc] py-20 px-4 lg:px-22">
       {/* Top Header */}
-      <div className="max-w-6xl mx-auto px-6 text-center lg:text-left">
-        <Guides />
+      <Guides  />
+      <div className="max-w-6xl relative mx-auto px-6 text-center lg:text-left">
         <h4 className="text-sm font-semibold text-purple-600 mb-2">
           Mission Control
         </h4>
@@ -39,7 +39,7 @@ export default function MissionControl() {
       </div>
 
       {/* Highlight Box */}
-      <div className="max-w-6xl mx-auto mt-12 px-6">
+      <div className="max-w-6xl relative mx-auto mt-12 px-6">
         <div className="rounded-2xl shadow-xl shadow-purple-200 bg-gray-50 p-10 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">
             Your Legal Mission Control

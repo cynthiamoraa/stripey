@@ -6,8 +6,8 @@ import Guides from "./Guides";
 export default function ConfidentialAsk() {
   return (
     <section className="relative bg-white py-24 px-4 lg:px-22">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-        <Guides />
+      <Guides />
+      <div className="max-w-6xl relative mx-auto px-6 grid md:grid-cols-2 gap-10">
         <div className="relative group rounded-2xl p-10 shadow-md hover:shadow-xl transition overflow-hidden bg-gradient-to-r from-gray-100 via-gray-50 to-white text-black">
           {/* Hover Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl"></div>

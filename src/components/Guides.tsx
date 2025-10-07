@@ -1,6 +1,5 @@
 import React from "react";
 
-
 interface GuidesProps {
   lines?: number; // number of inner vertical lines (3 for 4 columns)
   className?: string;
@@ -18,19 +17,28 @@ export default function Guides({
       className={`pointer-events-none absolute inset-0 flex justify-center ${className}`}
       aria-hidden
     >
-      <div className="relative w-full max-w-6xl h-full">
-        {/* left & right solid borders (inside the max width) */}
-        <div className="absolute left-0 top-0 h-full border-l border-gray-200" />
-        <div className="absolute right-0 top-0 h-full border-r border-gray-200" />
+      <div className="relative w-full  h-full">
+        {/* ✅ Left & right solid borders (inside the max width) */}
+        <div
+          className="absolute l left-4 lg:left-22 top-0 h-full border-l"
+          style={{ borderColor: color }}
+        />
+        <div
+          className="absolute right-4 lg:right-22 top-0 h-full border-r"
+          style={{ borderColor: color }}
+        />
 
-        {/* inner evenly-spaced lines */}
+        {/* ✅ Inner evenly spaced dashed lines */}
         {Array.from({ length: lines }).map((_, i) => {
           const leftPercent = ((i + 1) / (lines + 1)) * 100;
           return (
             <div
               key={i}
-              className="absolute hidden md:block top-0 h-full border-l border-dashed border-gray-200"
-              style={{ left: `${leftPercent}%` }}
+              className="absolute top-0 h-full border-l border-dashed hidden md:block"
+              style={{
+                left: `${leftPercent}%`,
+                borderColor: color, // 👈 this now takes full effect
+              }}
             />
           );
         })}

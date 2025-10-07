@@ -13,15 +13,13 @@ import ReadyToStop from "@/components/ReadyToStop";
 import FAQSection from "@/components/FaqSection";
 import MissionControl from "@/components/MissionControl";
 import ConfidentialControl from "@/components/ConfidentialControl";
-import Guides from "@/components/Guides";
 export default function LandingPage() {
   return (
-    <div className="SiteContainer">
+    <div >
       <HeroGradient>
         <NavBar />
         <HeroSection />
       </HeroGradient>
-    
         <EstimateRevenue />
         <ConfidentialControl />
         <ProductShowcase />
@@ -33,7 +31,7 @@ export default function LandingPage() {
         <FAQSection />
         <ReadyToStop />
         <Footer />
-      
+     
     </div>
   );
 }

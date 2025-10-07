@@ -2,13 +2,7 @@
 
 /* styles/globals.css */
 :root {
-  --accentColor: #635bff;
-  --guideBackground: #5d69e3;
-  --guideDarkColor: #4d5ae0;
-  --guideLightColor: #6772e5;
-  --guideLighterColor: #7a84e9;
-  --guideLightestColor: #8d95ec;
-
+  
   --blendBackground: #80e9ff;
   --blendIntersection: #0048e5;
   --blendForeground: #7a73ff;
@@ -41,40 +35,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  --gutterWidth: 16px;
-  --scrollbarWidth: 0px;
-  --windowWidth: calc(100vw - var(--scrollbarWidth));
-  --layoutWidth: calc(var(--windowWidth) - var(--gutterWidth) * 2);
-  --layoutWidthMax: 1080px;
-  --viewportWidthSmall: 375;
-  --viewportWidthMedium: 600;
-  --viewportWidthLarge: 1112;
-  --viewportScale: calc(var(--windowWidth) / var(--viewportWidthLarge));
-  --paddingTop: 160px;
-  --paddingBottom: 160px;
-  --columnPaddingNone: 0;
-  --columnPaddingSmall: 8px;
-  --columnPaddingNormal: 16px;
-  --columnPaddingMedium: 16px;
-  --columnPaddingLarge: 16px;
-  --columnPaddingXLarge: 16px;
-  --rowGapNormal: 8px;
-  --rowGapMedium: 24px;
-  --rowGapLarge: 32px;
-  --rowGapXLarge: 64px;
-  --rowGapXXLarge: 88px;
-  --rowGap: var(--rowGapNormal);
-  --columnCountMax: 1;
-  --columnWidth: calc(var(--layoutWidth) / var(--columnCountMax));
-  --columnMaxWidth: calc(var(--layoutWidthMax) * 0.25);
-  --copyMaxWidth: calc(var(--columnMaxWidth) * 3);
-}
 
-/* Ensure box-sizing is consistent */
-.MktRoot *, .MktRoot::after, .MktRoot::before {
-  box-sizing: border-box;
-}
+
 
 
 .clip-section-top {
@@ -124,18 +86,6 @@ html {
 }
 
 
-/* Column container
-.SiteContainer {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(var(--columnCountMax, 1), 1fr);
-   margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  position: relative;
-} */
-
-/* Debug column backgrounds */
 
 
 .Section__background {
@@ -174,32 +124,3 @@ html {
   transform-origin: 100% 0;
 }
 
-/* Guides */
-.Guides {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 var(--columnPaddingNormal, 32px);
-  pointer-events: none;
-}
-
-.Guides__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: var(--layoutWidth, 1200px);
-  height: 100%;
-  margin: 0 auto;
-}
-
-.Guides__guide {
-  width: 1px;
-  background: linear-gradient(
-    180deg,
-    var(--guideDashedColor, rgba(0, 0, 0, 0.2)),
-    var(--guideDashedColor, rgba(0, 0, 0, 0.2)) 50%,
-    transparent 0,
-    transparent
-  );
-  background-size: 1px 8px;
-}

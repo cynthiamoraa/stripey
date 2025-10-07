@@ -87,7 +87,7 @@ export default function FloatingCards() {
   }, []);
 
   return (
-    <div className="relative z-20 flex items-center justify-center h-full  ">
+    <div className="relative z-2 flex items-center justify-center h-full  ">
       <div className="relative w-full max-w-6xl flex items-center justify-center h-[350px] md:h-[400px] lg:h-[500px] overflow-hidden">
         {cards.map((card, idx) => (
           <div
