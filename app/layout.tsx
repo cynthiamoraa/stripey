@@ -8,14 +8,15 @@
       process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
     ),
     title: "Sque | AI-powered Conversations",
-    description: "Sque.ai helps you supercharge customer communication with AI.",
+    description:
+      "Sque.ai helps you supercharge customer communication with AI.",
     icons: {
       icon: "/Sque_icon_universal.svg", // 👈 Path to your icon inside /public
     },
     openGraph: {
       title: "Sque | AI-powered Conversations",
       description: "Modern customer engagement powered by AI.",
-      url: "https://sque.ai",
+      url: "https://stripey-six.vercel.app/",
       siteName: "Sque",
     },
   };
