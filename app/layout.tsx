@@ -10,9 +10,7 @@
     title: "Sque | AI-powered Conversations",
     description:
       "Sque.ai helps you supercharge customer communication with AI.",
-    icons: {
-      icon: "/Sque_icon_universal.svg",
-    },
+   
 
     openGraph: {
       title: "Sque | AI-powered Conversations",

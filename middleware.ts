@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { get } from "@vercel/edge-config";
 
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 export const config = {
   matcher: ["/((?!api|_next|.*\\..*).*)"], // skip static + API
